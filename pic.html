@@ -110,14 +110,17 @@
             margin-bottom: clamp(2rem, 6vw, 3rem); /* Responsive margin */
         }
 
-        .title {
-            font-family: 'Creepster', cursive;
-            font-size: clamp(3rem, 10vw, 5rem); /* Adjusted clamp for mobile */
-            color: var(--accent-glow);
-            margin-bottom: clamp(0.8rem, 2vw, 1rem); /* Responsive margin */
-            text-shadow: 0 0 15px var(--accent-glow), 0 0 25px rgba(255, 69, 0, 0.6);
-            animation: textFlicker 2s infinite alternate;
-        }
+      .title {
+    font-family: 'Playfair Display', serif; /* Elegant serif font */
+    font-size: clamp(2.5rem, 8vw, 4.5rem); /* Slightly softer sizing */
+    color: #ff69b4; /* Soft romantic pink */
+    margin-bottom: clamp(1rem, 3vw, 2rem);
+    text-shadow: 0 2px 8px rgba(255, 105, 180, 0.4), 0 0 12px rgba(255, 182, 193, 0.3);
+    animation: fadeGlow 6s ease-in-out infinite;
+    text-align: center;
+    letter-spacing: 1px;
+}
+    
 
         @keyframes textFlicker {
             0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
@@ -581,110 +584,127 @@
     </style>
 </head>
 <body>
-    <div class="floating-eerie">
-        <div class="eerie-element" style="top: 10%; left: 5%;">🦇</div>
-        <div class="eerie-element" style="top: 20%; right: 10%;">🕷️</div>
-        <div class="eerie-element" style="top: 40%; left: 15%;">🖤</div>
-        <div class="eerie-element" style="top: 60%; right: 20%;">🥀</div>
-        <div class="eerie-element" style="top: 80%; left: 10%;">👻</div>
-        <div class="eerie-element" style="top: 5%; right: 40%;">🕯️</div>
-        <div class="eerie-element" style="top: 30%; left: 70%;">🔮</div>
-        <div class="eerie-element" style="top: 75%; right: 30%;">💀</div>
-        <div class="eerie-element" style="top: 45%; left: 80%;">✨</div>
-        <div class="eerie-element" style="top: 90%; right: 50%;">💖</div>
-    </div>
+   <div class="floating-eerie">
+    <div class="eerie-element" style="top: 10%; left: 5%;">💖</div>
+    <div class="eerie-element" style="top: 20%; right: 10%;">🌸</div>
+    <div class="eerie-element" style="top: 40%; left: 15%;">💌</div>
+    <div class="eerie-element" style="top: 60%; right: 20%;">🕊️</div>
+    <div class="eerie-element" style="top: 80%; left: 10%;">💕</div>
+    <div class="eerie-element" style="top: 5%; right: 40%;">🌷</div>
+    <div class="eerie-element" style="top: 30%; left: 70%;">💫</div>
+    <div class="eerie-element" style="top: 75%; right: 30%;">🩷</div>
+    <div class="eerie-element" style="top: 45%; left: 80%;">✨</div>
+    <div class="eerie-element" style="top: 90%; right: 50%;">🌈</div>
+</div>
+
 
     <div class="container" id="mainContent">
         <div class="header">
-            <h1 class="title">Memories with My Haunted Love 👻❤️</h1>
-            <p class="subtitle">Every pic... a spooky but sweet memory with you 💕</p>
+            <h1 class="title">A Heart Full of Memories — All Yours 💭❤️‍🩹</h1>
+            <p class="subtitle">And these are the memories I made — quietly, just with you in them💕</p>
         </div>
 
         <div class="gallery-grid" id="desktopGallery">
-            <div class="memory-card">
-                <div class="tooltip">That cold night... your bony touch warmed my soul 🔥💀</div>
-                <div class="memory-image placeholder" data-image-url="bhootni1.png">👁️‍🗨️</div>
-                <div class="memory-message">Our first spooky moment together</div>
-            </div>
-            <div class="memory-card">
-                <div class="tooltip">Even in death... your smile brings me to life 👻❤️</div>
-                <div class="memory-image placeholder" data-image-url="bhootni2.png">👻</div>
-                <div class="memory-message">My cute ghost girl moment</div>
-            </div>
-            <div class="memory-card">
-                <div class="tooltip">That moonlit spell... bound me to you forever 🌕✨</div>
-                <div class="memory-image placeholder" data-image-url="bhootni3.png">🕷️</div>
-                <div class="memory-message">Magic under the dark sky</div>
-            </div>
-            <div class="memory-card">
-                <div class="tooltip">One kiss... and I knew I’d haunt you forever 🩸👄</div>
-                <div class="memory-image placeholder" data-image-url="bhootni4.png">🍷</div>
-                <div class="memory-message">When forever began</div>
-            </div>
-            <div class="memory-card">
-                <div class="tooltip">Darkness feared your glow... and so did I 🦇🖤</div>
-                <div class="memory-image placeholder" data-image-url="bhootni5.png">🦇</div>
-                <div class="memory-message">You were glowing... even in the dark</div>
-            </div>
-            <div class="memory-card">
-                <div class="tooltip">A ghostly vow... sealed with blood and love ⛓️🥀</div>
-                <div class="memory-image placeholder" data-image-url="bhootni6.png">⛓️</div>
-                <div class="memory-message">Our forever promise</div>
-            </div>
-            <div class="memory-card">
-                <div class="tooltip">Even cold rain couldn’t melt our burning love 🌧️💘</div>
-                <div class="memory-image placeholder" data-image-url="bhootni7.png">🕯️</div>
-                <div class="memory-message">Frozen in my heart</div>
-            </div>
-            <div class="memory-card">
-                <div class="tooltip">Even death couldn't kill what we started 🔥💔💀</div>
-                <div class="memory-image placeholder" data-image-url="bhootni8.png">🩸</div>
-                <div class="memory-message">This love is dark... but pure</div>
-            </div>
+          <div class="memory-card">
+    <div class="tooltip">You might forget me… but I could never forget how you made me feel.💫</div>
+    <div class="memory-image placeholder" data-image-url="memory1.png">👀</div>
+    <div class="memory-message">The moment I couldn’t look away</div>
+</div>
+
+<div class="memory-card">
+    <div class="tooltip">Your smile—still my favorite memory, even if it was never for me 🌸</div>
+    <div class="memory-image placeholder" data-image-url="memory2.png">😊</div>
+    <div class="memory-message">The smile I’ll never forget</div>
+</div>
+
+<div class="memory-card">
+    <div class="tooltip">You never noticed, but every word from you meant the world to me 🫶</div>
+    <div class="memory-image placeholder" data-image-url="memory3.png">📝</div>
+    <div class="memory-message">When your words stayed with me</div>
+</div>
+
+<div class="memory-card">
+    <div class="tooltip">One silent moment with you felt louder than a thousand songs 🎧💔</div>
+    <div class="memory-image placeholder" data-image-url="memory4.png">🎵</div>
+    <div class="memory-message">My favorite silence</div>
+</div>
+
+<div class="memory-card">
+    <div class="tooltip">You looked at the sky... I looked at you. Always did. 🌌</div>
+    <div class="memory-image placeholder" data-image-url="memory5.png">🌠</div>
+    <div class="memory-message">When stars didn’t matter, you did</div>
+</div>
+
+<div class="memory-card">
+    <div class="tooltip">You’ll never know how many nights I rewrote our story in my dreams 💭</div>
+    <div class="memory-image placeholder" data-image-url="memory6.png">💤</div>
+    <div class="memory-message">The dreams that felt too real</div>
+</div>
+
+<div class="memory-card">
+    <div class="tooltip">Even after all this time, it’s still you. It’s always been you 🕰️❤️‍🩹</div>
+    <div class="memory-image placeholder" data-image-url="memory7.png">⏳</div>
+    <div class="memory-message">7 years... and still counting</div>
+</div>
+
+<div class="memory-card">
+    <div class="tooltip">Maybe you were never mine, but I was always yours 💔</div>
+    <div class="memory-image placeholder" data-image-url="memory8.png">💌</div>
+    <div class="memory-message">A love that never needed reply</div>
+</div>
+
         </div>
 
         <div class="gallery-carousel" id="mobileGallery">
             <div class="carousel-container">
                 <div class="memory-card">
-                    <div class="memory-image placeholder" data-image-url="bhootni1.png">👁️‍🗨️</div>
-                    <div class="memory-message">Our first spooky moment together</div>
-                    <div class="tooltip">That cold night... your bony touch warmed my soul 🔥💀</div>
-                </div>
-                <div class="memory-card">
-                    <div class="memory-image placeholder" data-image-url="bhootni2.png">👻</div>
-                    <div class="memory-message">My cute ghost girl moment</div>
-                    <div class="tooltip">Even in death... your smile brings me to life 👻❤️</div>
-                </div>
-                <div class="memory-card">
-                    <div class="memory-image placeholder" data-image-url="bhootni3.png">🕷️</div>
-                    <div class="memory-message">Magic under the dark sky</div>
-                    <div class="tooltip">That moonlit spell... bound me to you forever 🌕✨</div>
-                </div>
-                <div class="memory-card">
-                    <div class="memory-image placeholder" data-image-url="bhootni4.png">🍷</div>
-                    <div class="memory-message">When forever began</div>
-                    <div class="tooltip">One kiss... and I knew I’d haunt you forever 🩸👄</div>
-                </div>
-                <div class="memory-card">
-                    <div class="memory-image placeholder" data-image-url="bhootni5.png">🦇</div>
-                    <div class="memory-message">You were glowing... even in the dark</div>
-                    <div class="tooltip">Darkness feared your glow... and so did I 🦇🖤</div>
-                </div>
-                <div class="memory-card">
-                    <div class="memory-image placeholder" data-image-url="bhootni6.png">⛓️</div>
-                    <div class="memory-message">Our forever promise</div>
-                    <div class="tooltip">A ghostly vow... sealed with blood and love ⛓️🥀</div>
-                </div>
-                <div class="memory-card">
-                    <div class="memory-image placeholder" data-image-url="bhootni7.png">🕯️</div>
-                    <div class="memory-message">Frozen in my heart</div>
-                    <div class="tooltip">Even cold rain couldn’t melt our burning love 🌧️💘</div>
-                </div>
-                <div class="memory-card">
-                    <div class="memory-image placeholder" data-image-url="bhootni8.png">🩸</div>
-                    <div class="memory-message">This love is dark... but pure</div>
-                    <div class="tooltip">Even death couldn't kill what we started 🔥💔💀</div>
-                </div>
+    <div class="tooltip">That night... you didn’t know, but I fell a little harder for you 💫</div>
+    <div class="memory-image placeholder" data-image-url="memory1.png">👀</div>
+    <div class="memory-message">The moment I couldn’t look away</div>
+</div>
+
+<div class="memory-card">
+    <div class="tooltip">Your smile—still my favorite memory, even if it was never for me 🌸</div>
+    <div class="memory-image placeholder" data-image-url="memory2.png">😊</div>
+    <div class="memory-message">The smile I’ll never forget</div>
+</div>
+
+<div class="memory-card">
+    <div class="tooltip">You never noticed, but every word from you meant the world to me 🫶</div>
+    <div class="memory-image placeholder" data-image-url="memory3.png">📝</div>
+    <div class="memory-message">When your words stayed with me</div>
+</div>
+
+<div class="memory-card">
+    <div class="tooltip">One silent moment with you felt louder than a thousand songs 🎧💔</div>
+    <div class="memory-image placeholder" data-image-url="memory4.png">🎵</div>
+    <div class="memory-message">My favorite silence</div>
+</div>
+
+<div class="memory-card">
+    <div class="tooltip">You looked at the sky... I looked at you. Always did. 🌌</div>
+    <div class="memory-image placeholder" data-image-url="memory5.png">🌠</div>
+    <div class="memory-message">When stars didn’t matter, you did</div>
+</div>
+
+<div class="memory-card">
+    <div class="tooltip">You’ll never know how many nights I rewrote our story in my dreams 💭</div>
+    <div class="memory-image placeholder" data-image-url="memory6.png">💤</div>
+    <div class="memory-message">The dreams that felt too real</div>
+</div>
+
+<div class="memory-card">
+    <div class="tooltip">Even after all this time, it’s still you. It’s always been you 🕰️❤️‍🩹</div>
+    <div class="memory-image placeholder" data-image-url="memory7.png">⏳</div>
+    <div class="memory-message">7 years... and still counting</div>
+</div>
+
+<div class="memory-card">
+    <div class="tooltip">Maybe you were never mine, but I was always yours 💔</div>
+    <div class="memory-image placeholder" data-image-url="memory8.png">💌</div>
+    <div class="memory-message">A love that never needed reply</div>
+</div>
+
             </div>
         </div>
 
@@ -710,7 +730,18 @@
         const mainContent = document.getElementById('mainContent'); // Get the main content container
 
         // Available horror/love emojis for hover effect
-        const horrorLoveEmojis = ['❤️‍🩹', '🖤', '💔', '🥀', '👻', '💀', '🩸', '🕷️', '🦇'];
+        const horrorLoveEmojis = [
+  '❤️‍🩹', // healing heart
+  '💖',    // sparkling heart
+  '💌',    // love letter
+  '🥺',    // emotional expression
+  '🌍',    // the world
+  '🌌',    // galaxy / endlessness
+  '🩷',    // soft pink heart
+  '💫',    // dreamy feel
+  '🕊️'     // peaceful love
+];
+
 
         // Function to create a random horror-love emoji
         function getRandomHorrorLoveEmoji() {
@@ -786,7 +817,7 @@
         function createSpectralWisp(element) {
             const wisp = document.createElement('div');
             wisp.className = 'spectral-wisp';
-            const wispSymbols = ['👻', '✨', '🖤', '💔', '🔮', '🥀', '💫']; // Eerie symbols for wisps
+            const wispSymbols = ['💖', '🌸', '💌', '✨', '🕊️', '🌷', '💫', '🩷', '🌈'];
             wisp.textContent = wispSymbols[Math.floor(Math.random() * wispSymbols.length)];
 
             const rect = element.getBoundingClientRect();
