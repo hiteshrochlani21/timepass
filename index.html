@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Eternal Love... My Haunting Beauty</title>
+    <title>My Eternal Love...</title>
     <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -117,14 +117,15 @@
         }
 
         .main-title {
-            font-family: 'Creepster', cursive;
-            font-size: clamp(3rem, 10vw, 6rem);
-            color: var(--accent-glow);
-            margin-bottom: clamp(1rem, 3vw, 1.5rem);
-            text-shadow: 0 0 20px var(--accent-glow), 0 0 30px rgba(255, 69, 0, 0.6);
-            line-height: 1.1;
-            animation: textFlicker 2s infinite alternate;
-        }
+    font-family: 'Cinzel', serif; /* Classy elegant font */
+    font-size: clamp(3rem, 8vw, 5rem);
+    color: #ff69b4; /* Soft pink tone */
+    margin-bottom: clamp(1rem, 3vw, 1.5rem);
+    text-shadow: 0 2px 10px rgba(255, 105, 180, 0.5);
+    line-height: 1.2;
+    animation: fadeInScale 2s ease-in-out forwards;
+    letter-spacing: 1px;
+}
 
         @keyframes textFlicker {
             0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
@@ -294,28 +295,29 @@
     </style>
 </head>
 <body>
-<div class="floating-element">💀</div>
-<div class="floating-element">🕸️</div>
-<div class="floating-element">🖤</div>
-<div class="floating-element">🥀</div>
-<div class="floating-element">🦇</div>
-<div class="floating-element">🔮</div>
 <div class="floating-element">💖</div>
-<div class="floating-element">👻</div>
-<div class="floating-element">⛓️</div>
-<div class="floating-element">🕯️</div>
+<div class="floating-element">💘</div>
+<div class="floating-element">🌸</div>
+<div class="floating-element">💕</div>
+<div class="floating-element">🌷</div>
+<div class="floating-element">🌟</div>
+<div class="floating-element">🎀</div>
+<div class="floating-element">💌</div>
+<div class="floating-element">✨</div>
+<div class="floating-element">🌈</div>
+
 
 <div class="container">
-    <h1 class="main-title">My Forever Love... My Magical Mystery 💀💖</h1>
+    <h1 class="main-title">My Forever Love... My Precious Dream 💖</h1>
     
     <div class="main-heading">
-        To the most beautiful Haunted Princess 🖤<br>
-        Can you feel the magic in the dark? ✨<br>
-        It’s Girlfriend’s Day, and I made this spooky love surprise just for YOU! 🥀👻
+        To the most beautiful Princess in my world 🌸   <br>
+        Can you feel the magic in our forever bond? ✨ <br>
+        It’s Girlfriend’s Day, and I created this little love surprise just for YOU! 💌
     </div>
     
     <button class="journey-btn" onclick="startJourney()">
-        Begin Our Haunted Love Story 🔮
+        Begin Our Love Story 💕
     </button>
 </div>
 
@@ -329,7 +331,7 @@
     function createHeart() {
         const heart = document.createElement('div');
         heart.className = 'heart';
-        const spookyHearts = ['🖤', '🥀', '💔', '✨'];
+        const spookyHearts = ['🎀', '🥀', '💔', '✨'];
         heart.innerHTML = spookyHearts[Math.floor(Math.random() * spookyHearts.length)];
         heart.style.left = Math.random() * 100 + 'vw';
         heart.style.animationDelay = Math.random() * 3 + 's';
