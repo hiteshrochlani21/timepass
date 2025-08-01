@@ -9,7 +9,7 @@
         :root {
             --primary-dark: #0d0006; /* Even darker background */
             --secondary-mist: #260013; /* Darker plum/maroon */
-            --accent-glow: #ff4500; /* Orange-red for eerie glow */
+            --accent-glow: #ff4500; /* Orange-red for eerie g@low */
             --text-light: #fbecec; /* Pale pink for contrast */
             --text-highlight: #ff69b4; /* A touch of original pink for 'love' */
             --popup-bg: rgba(26, 0, 13, 0.9); /* Dark, slightly transparent popup */
@@ -279,9 +279,16 @@
         }
 
         @keyframes successAppear {
-            0% { transform: translate(-50%, -50%) scale(0.7); opacity: 0; }
-            100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
-        }
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 .success-text {
     font-family: 'Playfair Display', serif; /* Poetic & elegant */
     font-size: clamp(1.8rem, 5vw, 3rem); /* Slightly soft scaling */
