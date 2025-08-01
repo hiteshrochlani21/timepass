@@ -90,15 +90,17 @@
         }
 
         /* Title */
-        .title {
-            font-family: 'Creepster', cursive;
-            font-size: clamp(3rem, 10vw, 5rem); /* Adjusted clamp for mobile */
-            font-weight: 700;
-            color: var(--accent-glow);
-            margin-bottom: clamp(1.5rem, 5vw, 2.5rem); /* Responsive margin */
-            text-shadow: 0 0 20px var(--accent-glow), 0 0 30px rgba(255, 69, 0, 0.6);
-            animation: textFlicker 2s infinite alternate;
-        }
+    .title {
+    font-family: 'Playfair Display', serif; /* Elegant, poetic font */
+    font-size: clamp(2.8rem, 8vw, 4.8rem); /* Smooth responsiveness */
+    font-weight: 700;
+    color: #ff69b4; /* Soft romantic pink */
+    margin-bottom: clamp(1.5rem, 5vw, 2.5rem);
+    text-align: center;
+    text-shadow: 0 2px 12px rgba(255, 182, 193, 0.5), 0 0 20px rgba(255, 105, 180, 0.4);
+    animation: fadeGlow 6s ease-in-out infinite alternate;
+    letter-spacing: 1px;
+}
 
         @keyframes textFlicker {
             0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
@@ -280,17 +282,18 @@
             0% { transform: translate(-50%, -50%) scale(0.7); opacity: 0; }
             100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
         }
+.success-text {
+    font-family: 'Playfair Display', serif; /* Poetic & elegant */
+    font-size: clamp(1.8rem, 5vw, 3rem); /* Slightly soft scaling */
+    color: #ff69b4; /* Romantic pink */
+    font-weight: 600;
+    margin-bottom: clamp(1rem, 4vw, 1.5rem);
+    line-height: 1.4;
+    text-align: center;
+    text-shadow: 0 2px 8px rgba(255, 182, 193, 0.5), 0 0 15px rgba(255, 105, 180, 0.4);
+    animation: fadeGlow 5s ease-in-out infinite alternate;
+}
 
-        .success-text {
-            font-family: 'Creepster', cursive;
-            font-size: clamp(2rem, 6vw, 3rem); /* Adjusted clamp for mobile */
-            color: var(--accent-glow);
-            font-weight: 700;
-            margin-bottom: clamp(1rem, 4vw, 1.5rem); /* Responsive margin */
-            text-shadow: 0 0 10px var(--accent-glow), 0 0 20px rgba(255, 69, 0, 0.6);
-            line-height: 1.2;
-            animation: textFlicker 1.5s infinite alternate; /* Flicker for success text too */
-        }
 
         .success-quote {
             font-family: 'Cinzel', serif;
@@ -345,33 +348,36 @@
     </style>
 </head>
 <body>
-    <div class="floating-eerie" id="floatingEerie">
-        <div class="eerie-element" style="top: 10%; left: 5%;">🦇</div>
-        <div class="eerie-element" style="top: 20%; right: 10%;">🕷️</div>
-        <div class="eerie-element" style="top: 60%; left: 8%;">🖤</div>
-        <div class="eerie-element" style="top: 70%; right: 15%;">🥀</div>
-        <div class="eerie-element" style="top: 30%; left: 85%;">👻</div>
-        <div class="eerie-element" style="top: 80%; right: 5%;">🔮</div>
-        <div class="eerie-element" style="top: 15%; left: 70%;">💀</div>
-        <div class="eerie-element" style="top: 45%; right: 80%;">✨</div>
-        <div class="eerie-element" style="top: 85%; left: 25%;">🕯️</div>
-        <div class="eerie-element" style="top: 5%; right: 40%;">💖</div> 
-    </div>
+<div class="floating-eerie" id="floatingEerie">
+    <div class="eerie-element" style="top: 10%; left: 5%;">💖</div>
+    <div class="eerie-element" style="top: 20%; right: 10%;">🌸</div>
+    <div class="eerie-element" style="top: 60%; left: 8%;">💌</div>
+    <div class="eerie-element" style="top: 70%; right: 15%;">🩷</div>
+    <div class="eerie-element" style="top: 30%; left: 85%;">🕊️</div>
+    <div class="eerie-element" style="top: 80%; right: 5%;">🌷</div>
+    <div class="eerie-element" style="top: 15%; left: 70%;">💫</div>
+    <div class="eerie-element" style="top: 45%; right: 80%;">✨</div>
+    <div class="eerie-element" style="top: 85%; left: 25%;">🌈</div>
+    <div class="eerie-element" style="top: 5%; right: 40%;">❤️</div> 
+</div>
+
 
     <div class="container">
-        <h1 class="title">A Pact Sealed in Shadow...</h1>
+        <h1 class="title">Always Yours, Never Mine✨</h1>
         
         <div class="popup" id="popup">
             <div class="question">
-                My **Phantom Queen**, will you forever haunt my dreams and bind our souls in eternal love? 💍🖤
+                Even if we were never meant to be.....💖
+                <br>
+                 will a part of you ever remember the part of me that never stopped loving you...? ❤
             </div>
             
             <div class="buttons">
                 <button class="btn btn-yes" id="yesBtn">
-                    ✅ Yes, My Dark Love!
+                    ✅ Yes..🥰
                 </button>
                 <button class="btn btn-no" id="noBtn">
-                    ❌ Never... (Try again, mortal) 😉
+                    ❌ Never...😔
                 </button>
             </div>
         </div>
@@ -379,10 +385,10 @@
 
     <div class="success-message" id="successMessage">
         <div class="success-text">
-            Our Eternity Begins! 🖤🔮
+            I still love you... I always will. Even if you never loved me back.  🌈😘
         </div>
         <div class="success-quote">
-            "Happy Girlfriend's Day, my immortal beloved." ✨
+            "Happy Girlfriend’s Day — to the one who’ll always live in my forever." ✨
         </div>
     </div>
 
@@ -390,7 +396,20 @@
         // --- Create floating eerie background elements ---
         function createFloatingEerieElements() {
             const elementsContainer = document.getElementById('floatingEerie');
-            const eerieEmojis = ['🦇', '🕷️', '🖤', '🥀', '👻', '🔮', '💀', '✨', '🕯️', '💖', '⛓️', '🦉']; // More variety
+            const eerieEmojis = [
+  '💖',  // sparkling love
+  '💌',  // unsent feelings
+  '🩷',  // soft heart
+  '❤️‍🩹', // healing love
+  '🌍',  // you're my world
+  '🌌',  // endless, deep connection
+  '💫',  // dreamy vibe
+  '✨',  // magic moments
+  '🌠',  // wishful love
+  '🕊️',  // peace, silence
+  '🌸',  // softness
+  '🌷'   // affection, beauty
+];
             
             for (let i = 0; i < 20; i++) { // More elements for denser effect
                 const element = document.createElement('div');
@@ -488,10 +507,11 @@
             }, 600); // Matches shake animation duration
             
             const question = popup.querySelector('.question');
-            const originalText = "My **Phantom Queen**, will you forever haunt my dreams and bind our souls in eternal love? 💍🖤";
+            const originalText = "will a part of you ever remember the part of me that never stopped loving you...? 💖";
             
             // Playful refusal text
-            question.innerHTML = 'Ah, a formidable spirit! 😉 But I shall not yield.<br><small style="font-size: 0.8em; opacity: 0.7; font-family: \'Montserrat\', sans-serif;">Perhaps a deeper spell is needed... Try again, my dear.</small>';
+            question.innerHTML = `It's okay... Not every love is meant to be returned. 💔<br><small style="font-size: 0.8em; opacity: 0.7; font-family: 'Montserrat', sans-serif;">Some feelings live quietly — and still mean everything.</small>`;
+
             
             setTimeout(() => {
                 question.innerHTML = originalText;
